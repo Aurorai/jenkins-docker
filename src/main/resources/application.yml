@@ -1,24 +1,5 @@
-server.port: 8080
+server.port: 8081
 
 spring:
   application:
-    name: jybj
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-#    url: jdbc:mysql://${MYSQL_HOST:47.99.245.204}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:jybj}?autoReconnect=true&useUnicode=true&characterEncoding=UTF8&useSSL=false&tcpKeepAlive=true
-    url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:jybj}?autoReconnect=true&useUnicode=true&characterEncoding=UTF8&useSSL=false&tcpKeepAlive=true
-    username: ${MYSQL_USERNAME:root}
-#    password: ${MYSQL_PASSWORD:123456}
-    password: ${MYSQL_PASSWORD:3.1415926}
-    hikari:
-      connection-test-query: SELECT 1 FROM DUAL
-      minimum-idle: 50
-      maximum-pool-size: 150
-    type: com.zaxxer.hikari.HikariDataSource
-  messages:
-    basename: i18n/error
-
-mybatis:
-  mapper-locations: classpath*:config.mybatis/**/*Mapper.xml
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    name: test
